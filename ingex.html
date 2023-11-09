@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hp victus 15</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h4 class="logo">Техноград</h4>
+                <ul class="nav_list">
+                    <li class="nav_item1"><a href="#" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="basket.html" class="nav_link">Корзина</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Ноутбуки</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Планшеты</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Телефоны</a></li>
+                </ul>
+                <div class="burger" onclick="burgerClick()">
+                    <div class="burger_line burger__line_1"></div>
+                    <div class="burger_line burger__line_2"></div>
+                    <div class="burger_line burger__line_3"></div>
+                </div>
+            </nav>
+            <button class="btn_menu" id="btn-menu">Меню</button>
+            <div id="menu" class="header__menu">
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#" class="nav_link">Каталог</a></li>
+                    <li class="menu_item"><a href="basket.html" class="nav_link">Корзина</a></li>
+                    <li class="menu_item"><a href="#" class="nav_link">Акции</a></li>
+                    <li class="menu_item"><a href="#" class="nav_link">Магазины</a></li>
+                    <li class="menu_item">
+                        <div class="theme">
+                            <h4 class="theme_title">Темы</h4>
+                            <ul class="theme_list">
+                                <li class="theme_item">
+                                    <div class="theme_white" onclick="choiceWhite()"></div>
+                                </li>
+                                <li class="theme_item">
+                                    <div class="theme_dark" onclick="choiceDark()"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="shop">
+            <div class="container">
+                <h1 class="shop_title">HP Victus 15</h1>
+                <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                    data-interval="7000" data-refresh="true">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="img/hp 1.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 2.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 3.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 4.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 5.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 6.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/hp 7.avif" alt="не загрузилось" class="shop_img">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+
+                <div class="accordion" id="accordion-1">
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">О товаре</h2>
+                        <div class="accordion__body">
+                            <p class="shop_text">Игровой ноутбук HP Victus 15 обладает восьмиядерным процессором Core
+                                i5-12450H
+                                от Intel с тактовой частотой от 2 ГГц до 4,4 ГГц. За счет этого гарантирована высокая
+                                производительность
+                                устройства, что исключает вероятность зависаний и сбоев при запуске ресурсоемких
+                                приложений. Кэш L3
+                                равен 12 Мб. Дискретная видеокарта Nvidia GeForce GTX 1650 объемом 4 Гб обеспечивает
+                                плавное
+                                воспроизведение любых эпизодов. Модель поставляется с предустановленной операционной
+                                системой
+                                Windows 11
+                                «Домашняя».</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">Цена</h2>
+                        <div class="accordion__body">
+                            <p class="shop_text">65000 руб</p>
+                            <button class="shop_btn" id="btn" onclick="buy()">Купить</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="video">
+            <video id="myVideo" class="myVideo" autoplay muted>
+                <source src="video/video1.mp4" type="video/mp4">
+            </video>
+            <div class="video__content">
+                <div class="container">
+                    <h2 class="video__title">Victus</h2>
+                    <p class="video__text">Тест игр</p>
+
+                    <button class="video__btn" id="play" onclick="play()">Pause</button>
+                    <button class="video__btn" id="mute" onclick="mute()">On</button>
+                    <button class="video__btn" onclick="next()">Next</button>
+                    <button class="video__btn" onclick="prev()">Prev</button>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <div class="container">
+                <h2 class="maps__title">Точка самовызова</h2>
+                <div class="google">
+                    <h3 class="google__title">Google Карта</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2581.4297614262696!2d39.92994604168666!3d43.428084624431584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1689060119091!5m2!1sru!2sru"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3 class="yandex__title">Яндекс Карта</h3>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A84cc8c8faf3c4cd4b36fe44d91fda703eb3b1ecb16ed2c93cb790e4d18420842&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <button class="basket" id="basket">
+            <a href="basket.html">
+                <img class="basket__img" src="img/basket.png" alt="">
+                <p class="price">0</p>
+            </a>
+        </button>
+
+    </main>
+    <footer class="footer">
+        <div class="container container_footer">
+            <p class="footer_text">&copy; Техноград 2023г.</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/video.js"></script>
+</body>
+
+</html>
